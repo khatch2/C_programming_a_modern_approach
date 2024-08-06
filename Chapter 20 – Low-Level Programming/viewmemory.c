@@ -32,9 +32,9 @@ int main(void)
         for(; i<10; i++) {
             printf("   ");
         }
-        printf(" ")
+        printf(" ");
         for(i = 0; i< 10 && i < n ; i++) {
-            BYTE char = *(ptr + i);
+            BYTE ch = *(ptr + i);
             if(!isprint(ch)) {
                 ch = '.';
             }
