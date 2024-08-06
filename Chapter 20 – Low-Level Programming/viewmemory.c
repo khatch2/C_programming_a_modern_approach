@@ -1,4 +1,4 @@
-/* */
+/* Segmentation fault (core dumped) */
 
 #include <ctype.h>
 #include <stdio.h>
