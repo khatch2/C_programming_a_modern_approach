@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define CHK_VALID  printf("     %s\n",                      \    
-                           errno != ERANGE ? "Yes" : "No ", \
-                           *ptr == '\0' ? "Yes" : "No")
+#define CHK_VALID  printf("    %s           %s\n",         \
+                          errno != ERANGE ? "Yes" : "No ", \
+                          *ptr == '\0' ? "Yes" : "No")
 
 int main(int argc, char *argv[])
 {
@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
     }
 
     printf("Function   Return Value\n");
-    ptintf("--------   ------------\n");
+    printf("--------   ------------\n");
     printf("atof       %g\n", atof(argv[1]));
-    printf("atoi       %g\n", atoi(argv[1]));
+    printf("atoi       %d\n", atoi(argv[1]));
 
     return 0;
 }
