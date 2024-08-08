@@ -1,4 +1,4 @@
-/* */
+/* test setjmp and longjmp */
 
 #include <setjmp.h>
 #include <stdio.h>
