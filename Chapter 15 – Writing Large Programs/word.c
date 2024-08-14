@@ -31,6 +31,7 @@ void read_word(char *word, int len)
     word[pos] = '\0';
 }
 
+/*
 int main(void)
 {
     char word[10];
@@ -40,3 +41,4 @@ int main(void)
 
     return 0;
 }
+*/

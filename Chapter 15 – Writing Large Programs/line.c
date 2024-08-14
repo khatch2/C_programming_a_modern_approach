@@ -66,6 +66,7 @@ void flush_line(void)
     }
 }
 
+/*
 int main(void)
 {
     clear_line();
@@ -76,3 +77,4 @@ int main(void)
 
     return 0;
 }
+*/
