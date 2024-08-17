@@ -1,4 +1,4 @@
-/* */
+/* DON'T FORGET TO WRITE canopen.c (page 547)*/
 
 #include <stdio.h>
 #include <stdlib.h>
