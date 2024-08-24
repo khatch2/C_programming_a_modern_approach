@@ -36,9 +36,27 @@ bool is_full(void)
 
 void push(int i)
 {
-
+    struct node *new_node = malloc( sizeof(struct node) );
+    if ( new_node == NULL) {
+        terminate("Error in push: stack is full.");
+    }
+    new_node->data = i;
+    new_node->next = top;
+    top = new_node;
 }
 
 int pop(void)
-{}
+{
+    struct node *old_top;
+    int i;
+
+    if ( is_empty() ) {
+        terminate("Error in pop: stack is empty.");
+    }
+    old_top = top;
+    i = top->data;
+    top = top->next;
+    free(old_top);
+    return i;
+}
 
